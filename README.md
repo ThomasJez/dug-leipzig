@@ -20,7 +20,9 @@ http://groups.drupal.org/node/150534
 ### Theme
 
 ### Contrib Modules
++ Views
++ Panels
++ Display Suite
 
-Views
 
 ### Custom Modules
