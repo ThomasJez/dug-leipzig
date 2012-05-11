@@ -23,6 +23,7 @@ http://groups.drupal.org/node/150534
 + Views
 + Panels
 + Display Suite
++ Rules
 
 
 ### Custom Modules
