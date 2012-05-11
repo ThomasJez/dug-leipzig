@@ -21,4 +21,6 @@ http://groups.drupal.org/node/150534
 
 ### Contrib Modules
 
+Views
+
 ### Custom Modules
