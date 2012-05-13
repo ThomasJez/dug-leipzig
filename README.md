@@ -17,12 +17,12 @@ Relaunch dug-leipzig.de
 + [Ondrej](mailto:info@anzui.de)
 + [Christoph](c.haensgen@happy-robots.de)
 + [Sebastian](s.kaufmann@happy-robots.de)
-+ Du?
++ You?
 
 
 *****
 
-## Technik
+## Technology
 
 ### Theme
 + [zen](http://drupal.org/project/zen) ([zen grids](http://zengrids.com) + [Sass](http://sass-lang.com))
