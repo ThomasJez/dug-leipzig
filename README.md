@@ -25,7 +25,7 @@ Relaunch dug-leipzig.de
 ## Technik
 
 ### Theme
-+ [zen](http://drupal.org/project/zen) + [zen grids](http://zengrids.com)
++ [zen](http://drupal.org/project/zen) ([zen grids](http://zengrids.com) + [Sass](http://sass-lang.com))
 
 ### Contrib Modules
 + [Administration menu](http://drupal.org/project/admin_menu)
