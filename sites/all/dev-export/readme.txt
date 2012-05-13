@@ -1,0 +1,1 @@
+Directory for exported data like the database or other stuff, that doesn't goes into features

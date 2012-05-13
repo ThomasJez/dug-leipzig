@@ -18,12 +18,31 @@ http://groups.drupal.org/node/150534
 ## Technik
 
 ### Theme
++ zen
 
 ### Contrib Modules
-+ Views
++ Administration menu
++ Backup and Migrate
++ Pathauto
++ Token
++ WYSIWYG
++ Transliteration
++ Advanced Help
++ Chaos Tool Suite
 + Panels
-+ Display Suite
-+ Rules
-
++ Views
++ Devel
++ SpamSpan
++ Libraries API
++ Webform
++ Localization update
++ Field Group
++ Date
++ Link
++ Email Field
++ Entity API
++ Field Collection
++ Strongarm
++ Features
 
 ### Custom Modules
