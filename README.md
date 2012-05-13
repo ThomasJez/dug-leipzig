@@ -1,15 +1,22 @@
 # DUG-Leipzig
 
-Relaunch www.dug-leipzig.de
+Relaunch dug-leipzig.de
 
-http://groups.drupal.org/node/150534
+[DUG-Leipzig on GDO](http://groups.drupal.org/node/150534)
+
+*****
+
+## First some rules | help
++ [Markdown cheat sheet](http://warpedvisions.org/projects/markdown-cheat-sheet)
++ [Drupal coding standards](http://drupal.org/coding-standards)
+
 
 *****
 
 ## Team
-+ Ondrej: info@anzui.de 
-+ Christoph: c.haensgen@happy-robots.de
-+ Sebastian: s.kaufmann@happy-robots.de
++ [Ondrej](mailto:info@anzui.de)
++ [Christoph](c.haensgen@happy-robots.de)
++ [Sebastian](s.kaufmann@happy-robots.de)
 + Du?
 
 
@@ -18,31 +25,33 @@ http://groups.drupal.org/node/150534
 ## Technik
 
 ### Theme
-+ zen
++ [zen](http://drupal.org/project/zen) + [zen grids](http://zengrids.com)
 
 ### Contrib Modules
-+ Administration menu
-+ Backup and Migrate
-+ Pathauto
-+ Token
-+ WYSIWYG
-+ Transliteration
-+ Advanced Help
-+ Chaos Tool Suite
-+ Panels
-+ Views
-+ Devel
-+ SpamSpan
-+ Libraries API
-+ Webform
-+ Localization update
-+ Field Group
-+ Date
-+ Link
-+ Email Field
-+ Entity API
-+ Field Collection
-+ Strongarm
-+ Features
++ [Administration menu](http://drupal.org/project/admin_menu)
++ [Backup and Migrate](http://drupal.org/project/backup_migrate)
++ [Pathauto](http://drupal.org/project/pathauto)
++ [Token](http://drupal.org/project/token)
++ [WYSIWYG](http://drupal.org/project/wysiwyg)
++ [Transliteration](http://drupal.org/project/transliteration)
++ [Advanced Help](http://drupal.org/project/advanced_help)
++ [Chaos Tool Suite](http://drupal.org/project/ctools)
++ [Panels](http://drupal.org/project/panels)
++ [Views](http://drupal.org/project/views)
++ [Devel](http://drupal.org/project/devel)
++ [SpamSpan](http://drupal.org/project/spamspan)
++ [Libraries API](http://drupal.org/project/libraries)
++ [Webform](http://drupal.org/project/webform)
++ [Localization update](http://drupal.org/project/l10n_update)
++ [Field Group](http://drupal.org/project/field_group)
++ [Date](http://drupal.org/project/date)
++ [Link](http://drupal.org/project/link)
++ [Email Field](http://drupal.org/project/email)
++ [Entity API](http://drupal.org/project/entity)
++ [Field Collection](http://drupal.org/project/field_collection)
++ [Strongarm](http://drupal.org/project/strongarm)
++ [Features](http://drupal.org/project/features)
 
 ### Custom Modules
+
+### Libraries
