@@ -37,6 +37,7 @@ Relaunch dug-leipzig.de
 + [Advanced Help](http://drupal.org/project/advanced_help)
 + [Chaos Tool Suite](http://drupal.org/project/ctools)
 + [Panels](http://drupal.org/project/panels)
++ [Display Suite](http://drupal.org/project/ds)
 + [Views](http://drupal.org/project/views)
 + [Devel](http://drupal.org/project/devel)
 + [SpamSpan](http://drupal.org/project/spamspan)
