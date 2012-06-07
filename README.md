@@ -35,7 +35,7 @@ Relaunch dug-leipzig.de
 + [WYSIWYG](http://drupal.org/project/wysiwyg)
 + [Transliteration](http://drupal.org/project/transliteration)
 + [Advanced Help](http://drupal.org/project/advanced_help)
-+ [Chaos Tool Suite](http://drupal.org/project/ctools)
++ [Chaos Tools Suite](http://drupal.org/project/ctools)
 + [Panels](http://drupal.org/project/panels)
 + [Display Suite](http://drupal.org/project/ds)
 + [Views](http://drupal.org/project/views)
@@ -52,6 +52,7 @@ Relaunch dug-leipzig.de
 + [Field Collection](http://drupal.org/project/field_collection)
 + [Strongarm](http://drupal.org/project/strongarm)
 + [Features](http://drupal.org/project/features)
++ [Module Filter](http://drupal.org/project/module_filter)
 
 ### Custom Modules
 
