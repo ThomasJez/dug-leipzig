@@ -88,9 +88,6 @@ audio:not([controls]) {
 
    The following is an example @font-face declaration. This font can then be
    used in any ruleset using a property like this:  font-family: Example, serif;
-
-   Since we're using Sass, you'll need to declare your font faces here, then you
-   can add them to the font variables in the _base.scss partial.
 */
 
 /*
@@ -135,38 +132,6 @@ html {
 }
 
 /*
- * Instead of relying on the fonts that are available on a user's computer, you
- * can use web fonts which, like images, are resources downloaded to the user's
- * browser. Because of the bandwidth and rendering resources required, web fonts
- * should be used with care.
- *
- * Numerous resources for web fonts can be found on Google. Here are a few
- * websites where you can find Open Source fonts to download:
- * - http://www.fontsquirrel.com/fontface
- * - http://www.theleagueofmoveabletype.com
- *
- * In order to use these fonts, you will need to convert them into formats
- * suitable for web fonts. We recommend the free-to-use Font Squirrel's
- * Font-Face Generator:
- *   http://www.fontsquirrel.com/fontface/generator
- *
- * The following is an example @font-face declaration. This font can then be
- * used in any ruleset using a property like this:  font-family: Example, serif;
-
-@font-face {
-  font-family: 'Example';
-  src: url('../fonts/example.eot');
-  src: url('../fonts/example.eot?iefix') format('eot'),
-    url('../fonts/example.woff') format('woff'),
-    url('../fonts/example.ttf') format('truetype'),
-    url('../fonts/example.svg#webfontOkOndcij') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
- */
-
-/*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 
@@ -208,6 +173,7 @@ textarea {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 
@@ -285,9 +251,9 @@ h2 {
 
 h3 {
   font-size: 1.17em;
-  line-height: 1.282em; /* 1.5rem / 1.17em = 1.282em */
-  margin-top: 1.282em;
-  margin-bottom: 1.282em;
+  line-height: 1.28205em; /* 1.5rem / 1.17em = 1.28205em */
+  margin-top: 1.28205em;
+  margin-bottom: 1.28205em;
 }
 
 h4 {
@@ -299,9 +265,9 @@ h4 {
 
 h5 {
   font-size: 0.83em;
-  line-height: 1.807em; /* 1.5rem / 0.83em = 1.807em */
-  margin-top: 1.807em;
-  margin-bottom: 1.807em;
+  line-height: 1.80723em; /* 1.5rem / 0.83em = 1.80723em */
+  margin-top: 1.80723em;
+  margin-bottom: 1.80723em;
 }
 
 h6 {
@@ -454,14 +420,9 @@ sub {
 dl,
 menu,
 ol,
-ul,
-.item-list ul /* Drupal override */ {
+ul {
   /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
   margin: 1.5em 0;
-}
-
-.item-list ul li { /* Drupal override */
-  margin: 0;
 }
 
 dd {
@@ -469,9 +430,7 @@ dd {
 }
 
 ul ul, ul ol,
-ol ul, ol ol,
-.item-list ul ul, .item-list ul ol,
-.item-list ol ul, .item-list ol ol {
+ol ul, ol ol {
   margin: 0; /* Turn off margins on nested lists. */
 }
 
@@ -481,8 +440,7 @@ ol ul, ol ol,
 
 menu,
 ol,
-ul,
-.item-list ul /* Drupal override */ {
+ul {
   padding: 0 0 0 30px; /* LTR */
 }
 
@@ -685,6 +643,10 @@ textarea {
   vertical-align: top; /* 2 */
 }
 
+label {
+  display: block;
+  font-weight: bold;
+}
 
 /* =============================================================================
    Tables
@@ -701,19 +663,4 @@ table {
   /* Add vertical rhythm margins. */
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-}
-
-/*
- * Drupal provides table styling which is only useful for its admin section
- * forms, so we override this default CSS. (We set it back in forms.css.)
- */
-
-th {
-  text-align: left; /* LTR */
-  padding: 0;
-  border-bottom: none;
-}
-
-tbody {
-  border-top: none;
 }

@@ -1,3 +1,27 @@
+Zen 7.x-5.x-dev, xxxx-xx-xx (development release)
+---------------------------
+- #1734124: Convert element-invisible/element-focusable mixins into @extend placeholder selectors
+- #1711768 by JohnAlbin and Zach Harkey: Move tpl documentation to doc pages
+- #1716718 by Cottser: Remove HTML comments for closing elements
+- #1728004: Convert unpublished text into HTML5 mark element
+- #1727982: Simplify Zen's stylesheets by removing system.theme.css
+- #1713122: Add SMACSS-style classes to markup
+  - #1714986: Add SMACSS-style rulesets to pager
+  - #1713320: Add SMACSS-style classes to messages
+  - #1719726: Simplify various selectors to use SMACSS-style classes
+  - #1713170: Add SMACSS-style classes to menus
+  - #1713172: Add SMACSS-style classes to tabs
+  - #1713168: Add SMACSS-style classes to header
+- #1651634 by Fugazi: Missing ID in comment wrapper breaks node link
+- #1674246 by scor and JohnAlbin: Adapt html.tpl.php output to RDFa 1.1 / HTML5
+- #1686634 by greg.1.anderson: drush_locate_root is not the best way to find the Drupal root
+- #1539166 by jtwalters and Cottser: Remove page-backgrounds.css
+- #1696602 by Tor Arne Thune: @font-face in normalize.css appears twice
+- #1601000 by Cottser and fearlsgroove: zen_html5_respond_meta settings not respected
+- #1595090: Update list of callbacks used by page manager
+- #998526 by JohnAlbin and Zach Harkey: Simplify stylesheet organization using SMACSS technique
+- #1597548 by scottrouse: responsive-sidebars-rtl not removed when creating theme with Drush
+
 Zen 7.x-5.1, 2012-05-18
 -----------------------
 - #1558952 by oeroek: #navigation overflows parent container in fixed width layout
@@ -73,7 +97,7 @@ Zen 7.x-3.x-dev, xxxx-xx-xx (development release)
 - #1110650: Remove work-around for missing anonymous class on comments (fixed by Drupal 7.9)
 - Work-around for a core bug affecting admin themes. See issue #943212.
 - #1258280 by barraponto: Document $page['navigation'] in page.tpl
-- #105524 by davidhwang: Redundant label CSS overrides Webform label placement selector
+- #1232840 by davidhwang: Redundant label CSS overrides Webform label placement selector
 - #1241090 by KrisBulman: Incorrect calc in html-reset comment
 - #1174290 by naxoc: Fix code error in js/README.txt
 - #1154358 by mverbaar, barraponto and JohnAlbin: Add theme setting for skip link text

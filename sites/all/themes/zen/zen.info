@@ -33,9 +33,9 @@ settings[zen_html5_respond_meta][] = meta
 settings[zen_rebuild_registry]     = 0
 settings[zen_wireframes]           = 0
 
-; Information added by drupal.org packaging script on 2012-05-18
-version = "7.x-5.1"
+; Information added by drupal.org packaging script on 2012-08-30
+version = "7.x-5.1+72-dev"
 core = "7.x"
 project = "zen"
-datestamp = "1337337097"
+datestamp = "1346332121"
 

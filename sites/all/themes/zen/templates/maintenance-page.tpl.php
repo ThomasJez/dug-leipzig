@@ -1,13 +1,10 @@
 <?php
 /**
  * @file
- * Zen theme's implementation to display a single Drupal page while offline.
+ * Returns the HTML for a single Drupal page while offline.
  *
- * All the available variables are mirrored in html.tpl.php and page.tpl.php.
- * Some may be blank but they are provided for consistency.
- *
- * @see template_preprocess()
- * @see template_preprocess_maintenance_page()
+ * Complete documentation for this file is available online.
+ * @see http://drupal.org/node/1728174
  */
 ?><!DOCTYPE html>
 <!--[if IEMobile 7]><html class="iem7" <?php print $html_attributes; ?>><![endif]-->
@@ -60,7 +57,7 @@
         <?php if ($site_slogan): ?>
           <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
         <?php endif; ?>
-      </hgroup><!-- /#name-and-slogan -->
+      </hgroup>
     <?php endif; ?>
 
     <?php print $header; ?>
@@ -77,24 +74,24 @@
       <?php endif; ?>
       <?php print $messages; ?>
       <?php print $content; ?>
-    </div><!-- /#content -->
+    </div>
 
     <div id="navigation">
       <?php print $navigation; ?>
-    </div><!-- /#navigation -->
+    </div>
 
     <?php if ($sidebar_first || $sidebar_second): ?>
       <aside class="sidebars">
         <?php print $sidebar_first; ?>
         <?php print $sidebar_second; ?>
-      </aside><!-- /.sidebars -->
+      </aside>
     <?php endif; ?>
 
-  </div><!-- /#main -->
+  </div>
 
   <?php print $footer; ?>
 
-</div><!-- /#page -->
+</div>
 
 <?php print $bottom; ?>
 
