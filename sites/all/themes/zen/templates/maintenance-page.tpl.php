@@ -1,13 +1,10 @@
 <?php
 /**
  * @file
- * Zen theme's implementation to display a single Drupal page while offline.
+ * Returns the HTML for a single Drupal page while offline.
  *
- * All the available variables are mirrored in html.tpl.php and page.tpl.php.
- * Some may be blank but they are provided for consistency.
- *
- * @see template_preprocess()
- * @see template_preprocess_maintenance_page()
+ * Complete documentation for this file is available online.
+ * @see http://drupal.org/node/1728174
  */
 ?><!DOCTYPE html>
 <!--[if IEMobile 7]><html class="iem7" <?php print $html_attributes; ?>><![endif]-->
@@ -20,14 +17,12 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
 
-  <?php if ($add_responsive_meta): ?>
-    <meta name="viewport" content="width=device-width, target-densityDpi=160dpi, initial-scale=1">
+  <?php if ($default_mobile_metatags): ?>
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width">
   <?php endif; ?>
   <meta http-equiv="cleartype" content="on">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
@@ -37,70 +32,68 @@
     <![endif]-->
   <?php elseif ($add_html5_shim): ?>
     <!--[if lt IE 9]>
-    <script src="<?php print $base_path . $path_to_zen; ?>/js/src/html5-innershiv.js"></script>
+    <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
     <![endif]-->
   <?php endif; ?>
 </head>
-<body class="<?php print $classes; ?>">
+<body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
-  <div id="page">
+<div id="page">
 
-    <header id="header" class="clearfix">
+  <header id="header" role="banner">
 
-      <?php if ($logo): ?>
-        <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-      <?php endif; ?>
+    <?php if ($logo): ?>
+      <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+    <?php endif; ?>
 
-      <?php if ($site_name || $site_slogan): ?>
-        <hgroup id="name-and-slogan">
-          <?php if ($site_name): ?>
-            <h1 id="site-name">
-              <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
-          <?php endif; ?>
-          <?php if ($site_slogan): ?>
-            <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
-          <?php endif; ?>
-        </hgroup><!-- /#name-and-slogan -->
-      <?php endif; ?>
-
-      <?php print $header; ?>
-
-    </header>
-
-    <div id="main" class="clearfix">
-
-      <div id="content" class="column" role="main">
-
-        <?php print $highlighted; ?>
-
-        <?php if ($title): ?>
-          <h1 class="title"><?php print $title; ?></h1>
+    <?php if ($site_name || $site_slogan): ?>
+      <hgroup id="name-and-slogan">
+        <?php if ($site_name): ?>
+          <h1 id="site-name">
+            <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+          </h1>
         <?php endif; ?>
-        <?php print $messages; ?>
 
-        <?php print $content; ?>
+        <?php if ($site_slogan): ?>
+          <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
+        <?php endif; ?>
+      </hgroup>
+    <?php endif; ?>
 
-      </div><!-- /#content -->
+    <?php print $header; ?>
 
-      <div id="navigation" class="clearfix">
-        <?php print $navigation; ?>
-      </div><!-- /#navigation -->
+  </header>
 
-      <?php if ($sidebar_first || $sidebar_second): ?>
-        <aside class="sidebars">
-          <?php print $sidebar_first; ?>
-          <?php print $sidebar_second; ?>
-        </aside><!-- /.sidebars -->
+  <div id="main">
+
+    <div id="content" class="column" role="main">
+      <?php print $highlighted; ?>
+      <a id="main-content"></a>
+      <?php if ($title): ?>
+        <h1 class="title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
+      <?php print $messages; ?>
+      <?php print $content; ?>
+    </div>
 
-    </div><!-- /#main -->
+    <div id="navigation">
+      <?php print $navigation; ?>
+    </div>
 
-    <?php print $footer; ?>
+    <?php if ($sidebar_first || $sidebar_second): ?>
+      <aside class="sidebars">
+        <?php print $sidebar_first; ?>
+        <?php print $sidebar_second; ?>
+      </aside>
+    <?php endif; ?>
 
-  </div><!-- /#page -->
+  </div>
 
-  <?php print $bottom; ?>
+  <?php print $footer; ?>
+
+</div>
+
+<?php print $bottom; ?>
 
 </body>
 </html>
